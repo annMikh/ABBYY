@@ -1,4 +1,6 @@
-package com.example.annamihaleva.abbyy;
+package com.example.annamihaleva.abbyy.retrofit;
+
+import com.example.annamihaleva.abbyy.objects.Questions;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;
@@ -7,8 +9,8 @@ import retrofit2.http.GET;
 
 public interface ServiceGetQuestions {
 
-    @GET("/2.2/questions?%100order=desc&sort=activity&tagged=android&site=stackoverflow")
-    Call<Questions> GetQuesions();
+    @GET("/2.2/questions?%20todate=1555200000&order=desc&max=1555804800&sort=activity&tagged=android&site=stackoverflow")
+    Call<Questions> GetQuestions();
 
 
     Retrofit retrofit = new Retrofit.Builder()

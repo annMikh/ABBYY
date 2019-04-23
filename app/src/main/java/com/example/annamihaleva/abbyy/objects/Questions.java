@@ -1,4 +1,6 @@
-package com.example.annamihaleva.abbyy;
+package com.example.annamihaleva.abbyy.objects;
+
+import com.example.annamihaleva.abbyy.objects.Item;
 
 import java.util.ArrayList;
 
